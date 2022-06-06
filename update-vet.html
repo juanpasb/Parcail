@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+
+<body>
+    <div class=" navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Citizens of 4 Legs<i class="material-icons left">pets</i></a>
+                    <a href="" class="menu-responsive "></a>
+                    <ul class="right">
+                        <li><a href="../window-Principal/index.html">HOME</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="blue-text"><i class="material-icons left">pets</i>
+            Update Owner
+        </h1>
+    </div>
+    <div class="container">
+        <form action="login-with-cookies" method="post">
+            <div class="row">
+
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <class class="material-icons prefix">pets</class>
+                        <input placeholder="address" id="adress_owner" type="text" class="validate">
+                        <label for="adress_owner" class="active">Address</label>
+                    </div>
+
+
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <select name="caseAnimal" id="caseAnimal" required>
+                            <option value="" disabled selected>select location </option>
+
+                            <option value="1">teusaquillo</option>
+                            <option value="2">Ciudad Bolivar</option>
+                            <option value="3">Santa Fe</option>
+                            <option value="4">San Cristobal</option>
+                            <option value="5">La Candelaria</option>
+                            <option value="6">Tunjuelito</option>
+                            <option value="7">Bosa</option>
+                            <option value="8">Los martires</option>
+                            <option value="9">Engativa</option>
+                            <option value="10">Fontibon</option>
+                            <option value="11">Suba</option>
+                            <option value="12">Usaquen</option>
+                            <option value="13">Barrios Unidos</option>
+                            <option value="14">Kennedy</option>
+                            <option value="15">Antonio Nariño</option>
+                            <option value="16">Puente Aranda</option>
+                            <option value="17">Usme</option>
+                            <option value="18">Uribe</option>
+                            <option value="19">Chapinero</option>
+                            <option value="20">Sumapaz</option>
+                            <option value="21">Otros</option>
+
+                        </select>
+                        <label>Location </label>
+                    </div><br>
+
+
+                    <br><button class="blue waves-light btn" type="submit" id="CreateAnimal" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
+    </script>
+
+
+</body>
+
+</html>

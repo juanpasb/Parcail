@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+
+<body>
+    <div class=" navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Citizens of 4 Legs<i class="material-icons left">pets</i></a>
+                    <a href="" class="menu-responsive "></a>
+                    <ul class="right">
+                        <li><a href="../window-Principal/index.html">HOME</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="blue-text"><i class="material-icons left">pets</i>
+            Filter Animals
+        </h1>
+    </div>
+    <div class="container">
+        <form action="login-with-cookies" method="post">
+            <div class="row">
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">developer_board</i>
+                        <input placeholder="Microchip (optional)" id="microchip" type="text" class="validate">
+                        <label for="microchip" class="active">Microchip</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Pet Name" id="Pet_name" type="text" class="validate">
+                        <label for="microchip" class="active">Pet Name</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="species" id="Pet_species" type="text" class="validate">
+                        <label for="microchip" class="active">Pet species</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Pet breed" id="Pet_breed" type="text" class="validate">
+                        <label for="microchip" class="active">Pet Breed</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Pet Size" id="Pet_size" type="text" class="validate">
+                        <label for="microchip" class="active">Pet Size</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Pet Sex" id="Pet_Sex" type="text" class="validate">
+                        <label for="microchip" class="active">Pet Sex</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Pet ID" id="Pet_Id" type="text" class="validate">
+                        <label for="microchip" class="active">Pet ID</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                     </div>
+                    <div class="input-field col s6">
+                    </div>
+                    <div class="input-field col s6">
+                    </div>
+
+
+
+
+                    <br>
+                    <button class="blue waves-light btn" type="submit" id="CreateAnimal" name="action">Filter   
+                        <i class="material-icons left">send</i>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+        <table id="table-filter" class="table table-fluid">
+            <thead>
+                <tr>
+     
+                    <th scope="row">ID</th>
+                    <th scope="row">microchip</th>
+                    <th scope="row">Name</th>
+                    <th scope="row">Species</th>
+                    <th scope="row">Breed</th>
+                    <th scope="row">Size</th>
+                    <th scope="row">Sex</th>
+                    <th scope="row">Image</th>
+            
+                </tr>
+            </thead>
+        </table>
+
+
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+<body>
+<div class=" navbar-fixed">
+    <nav class="blue nav-extended">
+        <div class=" nav-wrapper container">
+
+            <a href="" class="brand-logo">Citizens of 4 Legs<i class="material-icons">pets</i></a>
+
+
+            <ul  class="right">
+                <li>
+                    <a href="../login/login.html" >
+                        Sign in
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class=" navbar-fixed">
+    <nav class="blue lighten-2 nav-extended">
+        <div class=" nav-wrapper container">
+            <ul class="left hide-on-med-and-down">
+            <li><a class="dropdown-trigger" href="#" data-target="OFFICIAL_1">OFFICIAL<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="PET">PET OWNER<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="VET">VET<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul id="OFFICIAL_1" class="dropdown-content">
+    <li><a href="../Official/table-filter.html">Table Filter</a></li>
+    <li class="divider"></li>
+    <li><a href="../Official/table-owner.html">Table Owner</a></li>
+    <li class="divider"></li>
+    <li><a href="../Official/table-pets.html">Table Pets</a></li>
+</ul>
+<ul id="PET" class="dropdown-content">
+    <li><a href="../pet_owner/Create-case.html">Create Case</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/pet_owner.html">Pet Owner</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/Table-pet.html">Table Pet</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/Update-owner.html">Update Owner</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/update-pet.html">Update Pet</a></li>
+</ul>
+<ul id="VET" class="dropdown-content">
+    <li><a href="../Vet/create-visit.html">Create Visit</a></li>
+    <li class="divider"></li>
+    <li><a href="../Vet/table-visits.html">Table Visits</a></li>
+    <li class="divider"></li>
+    <li><a href="../Vet/update-vet.html">Update vet</a></li>
+</ul>
+
+<div class="container section">
+    <div class="row">
+        <div class="col s12">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="https://blogs.cdc.gov/publichealthmatters/files/2020/05/golden_retiver_cat_cropped.jpg" alt="">
+                        <div class="caption right-align">
+                            <FONT FACE="Brush Script MT" SIZE=25  COLOR= black>Lost your pet?</FONT>
+                            <h3 class=" "></h3>
+                            <FONT FACE="Brush Script MT" SIZE=25  COLOR= black>Report your loss</FONT>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://pets-central.com/wp-content/uploads/2020/09/petcentral_banner_adoption.jpg" alt="">
+                        <div class="caption center-aling">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function (){
+        M.AutoInit();
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function (){
+        M.AutoInit();
+    });
+
+</script>
+
+</body>
+</html>

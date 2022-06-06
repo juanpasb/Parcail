@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+
+<body>
+    <div class=" navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                    <a href="#" class="brand-logo">Citizens of 4 Legs<i class="material-icons left">pets</i></a>
+                    <a href="" class="menu-responsive "></a>
+                    <ul class="right">
+                        <li><a href="../window-Principal/index.html">HOME</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="blue-text"><i class="material-icons left">pets</i>
+            Create  Visit
+        </h1>
+    </div>
+    <div class="container">
+        <form action="login-with-cookies" method="post">
+            <div class="row">
+
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <class class="material-icons prefix">pets</class>
+                        <input placeholder="ID" id="microchip" type="text" class="validate">
+                        <label for="microchip" class="active">Microchip</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Description visit" id="descriptio-visit" type="text" class="validate">
+                        <label for="microchip" class="active">Description</label> </label>
+                    </div>
+
+
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <select name="type animal" id="type-Animal" required>
+                            <option value="" disabled selected>Select  type </option>
+                            <option value="2">Esterilización</option>
+                            <option value="3">Implantación de microchip</option>
+                            <option value="4">Vacunación</option>
+                            <option value="5">Desparasitación</option>
+                            <option value="6">Urgencia</option>
+                            <option value="7">Control</option>
+                        </select>
+                        <label>Type visit</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <label for="caseDate"> Case date</label><br>
+                        <input type="Date" name="caseDate" size="30" id="caseDate" required>
+                    </div>
+
+
+                    <button class="blue waves-light btn" type="submit" id="CreateAnimal" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
+    </script>
+
+
+</body>
+
+</html>
